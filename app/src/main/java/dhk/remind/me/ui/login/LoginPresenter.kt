@@ -1,4 +1,4 @@
-package dhk.remind.me.login
+package dhk.remind.me.ui.login
 
 class LoginPresenter: LoginContract.Presenter {
 }

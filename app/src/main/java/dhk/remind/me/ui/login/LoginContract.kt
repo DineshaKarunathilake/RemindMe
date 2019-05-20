@@ -1,4 +1,4 @@
-package dhk.remind.me.login
+package dhk.remind.me.ui.login
 
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 

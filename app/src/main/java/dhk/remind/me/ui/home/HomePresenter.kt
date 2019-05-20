@@ -1,4 +1,4 @@
-package dhk.remind.me.home
+package dhk.remind.me.ui.home
 
 class HomePresenter: HomeContract.Presenter {
 }

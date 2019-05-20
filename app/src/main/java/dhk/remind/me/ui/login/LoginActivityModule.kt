@@ -1,4 +1,4 @@
-package dhk.remind.me.login
+package dhk.remind.me.ui.login
 
 import dagger.Binds
 import dagger.Module

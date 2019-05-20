@@ -11,10 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".home.HomeActivity">
+        <activity android:name="dhk.remind.me.ui.home.HomeActivity">
 
         </activity>
-        <activity android:name=".login.LoginActivity">
+        <activity android:name="dhk.remind.me.ui.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

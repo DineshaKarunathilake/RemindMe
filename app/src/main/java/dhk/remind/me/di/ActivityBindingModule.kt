@@ -4,10 +4,10 @@ package dhk.remind.me.di
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import dhk.remind.me.home.HomeActivity
-import dhk.remind.me.home.HomeActivityModule
-import dhk.remind.me.login.LoginActivity
-import dhk.remind.me.login.LoginActivityModule
+import dhk.remind.me.ui.home.HomeActivity
+import dhk.remind.me.ui.home.HomeActivityModule
+import dhk.remind.me.ui.login.LoginActivity
+import dhk.remind.me.ui.login.LoginActivityModule
 
 @Module
 interface ActivityBindingModule {

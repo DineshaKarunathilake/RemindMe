@@ -3,12 +3,11 @@ package dhk.remind.me.di
 import android.app.Application
 import dagger.BindsInstance
 import dagger.Component
-import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 import dagger.android.support.AndroidSupportInjectionModule
 import dhk.remind.me.RemindMeApp
-import dhk.remind.me.login.LoginActivityModule
+import dhk.remind.me.ui.login.LoginActivityModule
 import javax.inject.Singleton
 
 @Singleton
