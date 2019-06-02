@@ -6,7 +6,7 @@ interface LoginContract {
 
     interface View {
 
-        fun showHomePageView()
+        fun showHomePageView(account: GoogleSignInAccount)
         fun updateUI(account: GoogleSignInAccount?)
 
     }

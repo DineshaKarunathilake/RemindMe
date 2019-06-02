@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.Task
 import com.google.android.gms.common.SignInButton
 import dagger.android.support.DaggerAppCompatActivity
 import dhk.remind.me.ui.home.HomeActivity
+import dhk.remind.me.ui.navigation.SideNavActivity
 
 
 class LoginActivity : DaggerAppCompatActivity(), LoginContract.View {
@@ -101,7 +102,7 @@ class LoginActivity : DaggerAppCompatActivity(), LoginContract.View {
 
         if (account != null) {
             Log.i(TAG, "Authentication exists. Directing to home activity")
-            showHomePageView()
+            showHomePageView(account)
         } else {
             Log.i(TAG, "Needs authentication")
         }
@@ -109,10 +110,13 @@ class LoginActivity : DaggerAppCompatActivity(), LoginContract.View {
 
     }
 
-    override fun showHomePageView() {
-        Log.i(TAG, "Starting home activity")
-        val homeIntent = Intent(this, HomeActivity::class.java)
-        startActivity(homeIntent)
+    override fun showHomePageView(account: GoogleSignInAccount) {
+        Log.i(TAG, "Starting side nav activity")
+        val navigationIntent = Intent(this, SideNavActivity::class.java)
+        navigationIntent.putExtra("NAME", account.displayName)
+        navigationIntent.putExtra("EMAIL", account.email)
+        navigationIntent.putExtra("PROFILE_IMG", account.photoUrl.toString())
+        startActivity(navigationIntent)
         finish()
     }
 }
